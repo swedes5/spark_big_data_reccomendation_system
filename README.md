@@ -25,13 +25,18 @@ This system utilizes a hybrid approach:
 Because this script utilizes PySpark and requires specific dataset paths as arguments, you must run it from the terminal with the correct file paths provided in order.
 
 **1. Install Requirements**
+
 Ensure you have the required libraries installed in your Python environment:
+```bash
 pip install -r requirements.txt
+```
 
 **2. Run the Scripts**
-In the terminal run:
-spark-submit recommender.py yelp_data yelp_val.csv comp_output.csv
 
+In the terminal run:
+```bash
+spark-submit recommender.py yelp_data yelp_val.csv comp_output.csv
+```
 ### 🚀 Future Work: From Prediction to True Recommendation
 Currently, the base engine is complete and accurately predicts ratings for user-business pairs. However, a true recommendation system serves curated content rather than just predicting hypothetical scores. 
 
